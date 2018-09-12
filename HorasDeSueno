@@ -1,1 +1,38 @@
-https://repl.it/@Josue1709/HorasDeSueno
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    String mensaje;//Declarando variable de mensaje
+    String user;//Declarando variable de usuario
+
+    user="Josué"; 
+    mensaje="Hakim>>\n\t¿Cuántas horas duermes al día?\n"+user+">>";
+    System.out.println(mensaje); //Orden de imprimir mensaje
+
+    Scanner teclado=new Scanner(System.in); //Entrada de lectura de teclado
+    int horas;//Horas tendrá un valor entero
+
+    horas=teclado.nextInt();
+
+    mensaje="HaKim>>\n\tBueno esto es lo que has dormido antes:\n\t";
+    mensaje=mensaje+"************************************************************************";
+    mensaje=mensaje+"\n\t*Semana\t\t*Mes pasado\t*Año pasado\t*Toda la vida\n\t";
+    mensaje=mensaje+"************************************************************************\n\t*";
+    mensaje=mensaje+horas*7;
+    mensaje=mensaje+"\t\t*";//Comandos para acomodar los resultados
+    mensaje=mensaje+horas*30;
+    mensaje=mensaje+"\t\t*";
+    mensaje=mensaje+horas*365;
+    mensaje=mensaje+"\t\t*";
+    mensaje=mensaje+horas*6570;
+    mensaje=mensaje+"\n\t************************************************************************\n\t";
+    
+    System.out.println(mensaje);
+
+    mensaje="Hakim>>\tDuermes mucho no? ja ja ja";
+    System.out.println(mensaje);
+    
+    }
+    }
+  
+
